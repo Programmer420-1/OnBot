@@ -269,9 +269,6 @@ class music_updated(commands.Cog):
     message_string = '\n'.join(command_list)
     await ctx.send("Help: \n"+message_string)
 
-  @commands.command()
-  async def loop(self,ctx):
-    pass
 
 
 
