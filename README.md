@@ -1,4 +1,7 @@
 # OnBot
-In dev discord music bot. For self hosting purpose only... For now
+A simple discord music bot
 #
-Got this inspiration of making a discord bot from my friends. <br>Special thanks to [] for the tutorial and basic concept of how a discord bot works. Most of the functionality from their teachings.
+Got this inspiration of making a discord bot from my friends. <br>Special thanks to @alphascript for the tutorial and basic concepts of how a discord bot works. Part of the functionalities will not work without his teachings.
+#
+<br><br>
+
