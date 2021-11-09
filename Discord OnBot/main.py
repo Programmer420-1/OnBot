@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from music_updated import music_updated
+from configparser import ConfigParser
 
 cogs  = [music_updated]
 
@@ -15,5 +16,12 @@ async def setup(): # wait the bot is ready only we add the cog , otherwise self.
   await client.wait_until_ready()
   client.add_cog(music_updated(client))
 
+#Read config.ini file
+config_object = ConfigParser()
+config_object.read("config.ini")
+
+#Get the password
+TOKEN = config_object["TOKEN"]
+
 client.loop.create_task(setup())
-client.run("ODk0MDkxMTQ5MDc2MjA1NTg4.YVk9RQ.jB2mmKt3S4E8H7AMNMxlWEHvGD0")
+client.run(TOKEN["TOKEN"])
