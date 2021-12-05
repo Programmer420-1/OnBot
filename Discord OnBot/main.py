@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 from music_updated import music_updated
 from configparser import ConfigParser
@@ -18,7 +19,7 @@ async def setup(): # wait the bot is ready only we add the cog , otherwise self.
 
 #Read config.ini file
 config_object = ConfigParser()
-config_object.read("config.ini")
+config_object.read(r"..\config.ini")
 
 #Get the password
 TOKEN = config_object["TOKEN"]

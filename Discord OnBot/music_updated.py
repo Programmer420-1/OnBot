@@ -48,7 +48,7 @@ class music_updated(commands.Cog):
     global nowPlaying
     print("running set up method")
     for guild in self.client.guilds:
-      # print(str(guild.id)+" << guild id")
+      print(str(guild.id)+" << guild id")
       queue[guild.id] = []
       nowPlaying[guild.id] = None
 
